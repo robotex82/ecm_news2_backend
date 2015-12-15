@@ -6,7 +6,7 @@ PATH
       ecm_news2
       itsf_backend
       jquery-rails
-      rails (> 4.0)
+      rails (>= 4.0)
       rails-i18n
       route_translator
 
