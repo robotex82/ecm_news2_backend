@@ -1,0 +1,1 @@
+//= require ecm/news/backend/application

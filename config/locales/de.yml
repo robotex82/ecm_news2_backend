@@ -1,0 +1,12 @@
+de:
+  ecm_news_backend: 'News'
+  ecm:
+    news:
+      backend:
+        items:
+          table:
+            publish: Veröffentlichen
+            unpublish: Zurückziehen
+  routes:
+    mount:
+      ecm_news_backend: '/backend/news'

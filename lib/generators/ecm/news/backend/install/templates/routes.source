@@ -1,0 +1,4 @@
+
+  localized do
+    mount Ecm::News::Backend::Engine => '/backend/ecm/news'
+  end
