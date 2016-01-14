@@ -1,0 +1,24 @@
+defaults:
+  permissions:
+    - ecm/news/backend/engine
+    - ecm/news/item/index
+    - ecm/news/item/show
+    - ecm/news/item/new
+    - ecm/news/item/create
+    - ecm/news/item/edit
+    - ecm/news/item/update
+    - ecm/news/item/destroy
+  roles:
+    ecm/news/administrator:
+      - ecm/news/backend/engine
+      - ecm/news/item/index
+      - ecm/news/item/show
+      - ecm/news/item/new
+      - ecm/news/item/create
+      - ecm/news/item/edit
+      - ecm/news/item/update
+      - ecm/news/item/destroy
+    ecm/news/reviewer:
+      - ecm/news/backend/engine
+      - ecm/news/item/index
+      - ecm/news/item/show

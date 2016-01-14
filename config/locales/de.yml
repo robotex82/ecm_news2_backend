@@ -1,5 +1,6 @@
 de:
-  ecm_news_backend: 'News'
+  classes:
+    ecm/news/backend/engine: 'News'
   ecm:
     news:
       backend:

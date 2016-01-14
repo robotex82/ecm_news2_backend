@@ -4,13 +4,14 @@
 = table.column :locale
 = table.column :title, class: 'truncate-chars truncate-chars-30'
 = table.column :body, class: 'truncate-chars truncate-chars-30'
-= table.column_timestamps
-= table.column(:additional_actions, class: 'table-data-centered') do |item| 
-  - if item.published?
-    = link_to(toggle_published_item_path(item), class: 'btn btn-xs btn-danger', method: :post, title: t('.unpublish')) do
-      %span.glyphicon.glyphicon-eye-close
-      = t('.unpublish')
-  - else
-    = link_to(toggle_published_item_path(item), class: 'btn btn-xs btn-success', method: :post, title: t('.publish')) do
-      %span.glyphicon.glyphicon-eye-open
-      = t('.publish')
+= table.timestamps
+= table.acts_as_published_actions
+/ = table.column(:additional_actions, class: 'table-data-centered') do |item| 
+/   - if item.published?
+/     = link_to(toggle_published_item_path(item), class: 'btn btn-xs btn-danger', method: :post, title: t('.unpublish')) do
+/       %span.glyphicon.glyphicon-eye-close
+/       = t('.unpublish')
+/   - else
+/     = link_to(toggle_published_item_path(item), class: 'btn btn-xs btn-success', method: :post, title: t('.publish')) do
+/       %span.glyphicon.glyphicon-eye-open
+/       = t('.publish')

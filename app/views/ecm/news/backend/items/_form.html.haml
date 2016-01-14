@@ -1,6 +1,6 @@
 .well
   = form.input :title
-  = form.input :locale,  collection: I18n.available_locales
+  = form.locale_input
 
 .well  
   = form.input :body, input_html: { 'data-add-editor': true, 'data-editor-syntax': :textile }

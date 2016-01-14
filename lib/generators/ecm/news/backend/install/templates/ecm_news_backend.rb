@@ -4,9 +4,11 @@ Ecm::News::Backend.configure do |config|
   # Controller.descendants is empty in development. This is an eager load
   # issue.
   #
-  # Default: config.base_controller_descendants = []
+  # Default: config.registered_controllers = -> {[
+  #            Ecm::News::Backend::ItemsController
+  #          ]}
   #
-  config.base_controller_descendants = [
+  config.registered_controllers = -> {[
     Ecm::News::Backend::ItemsController
-  ]
+  ]}
 end

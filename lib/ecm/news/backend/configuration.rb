@@ -9,8 +9,8 @@ module Ecm
           yield self
         end
 
-        mattr_accessor :base_controller_descendants do
-          []
+        mattr_accessor :registered_controllers do
+          -> {[]}
         end
       end
     end
