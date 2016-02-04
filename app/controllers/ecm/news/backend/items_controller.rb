@@ -1,4 +1,4 @@
-class Ecm::News::Backend::ItemsController < Itsf::Backend::BaseController
+class Ecm::News::Backend::ItemsController < Itsf::Backend::Resource::BaseController
   def self.resource_class
     Ecm::News::Item
   end
