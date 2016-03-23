@@ -16,4 +16,9 @@
 !/spec/dummy/log/.keep
 /spec/dummy/tmp
 /spec/dummy/spring/
+
+# Gems
 *.gem
+
+# Paperclip
+/spec/dummy/public
