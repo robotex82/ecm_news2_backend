@@ -3,7 +3,7 @@ PATH
   specs:
     ecm_news2_backend (1.1.0)
       coffee-rails
-      ecm_news2
+      ecm_news2 (>= 2.0.8)
       itsf_backend
       jquery-rails
       rails (>= 4.0)
@@ -83,15 +83,15 @@ GEM
     commonjs (0.2.7)
     concurrent-ruby (1.0.0)
     diff-lcs (1.2.5)
-    ecm_news2 (2.0.3)
+    ecm_news2 (2.0.8)
       acts_as_markup
       acts_as_published
       bootstrap-kaminari-views
       ecm_pictures2
-      friendly_id
+      friendly_id (>= 5.0)
       kaminari
       rails (>= 4.0)
-    ecm_pictures2 (2.1.1)
+    ecm_pictures2 (2.1.2)
       RedCloth
       acts_as_list
       acts_as_markup
@@ -148,7 +148,7 @@ GEM
     i18n (0.7.0)
     i18n-debug (1.1.0)
       i18n (< 1)
-    itsf_backend (1.1.8)
+    itsf_backend (1.1.9)
       ace-rails-ap
       bootstrap-kaminari-views
       cocoon

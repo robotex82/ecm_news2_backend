@@ -21,4 +21,8 @@ class Ecm::News::Backend::ItemsController < Itsf::Backend::Resource::BaseControl
       .require(:ecm_news_item)
       .permit(:title, :locale, :body, :link_to_more, :published, pictures_attributes: [ :image, :_destroy, :id ])
   end
+
+  def load_resource
+    load_scope.friendly.find(params[:id])
+  end
 end
