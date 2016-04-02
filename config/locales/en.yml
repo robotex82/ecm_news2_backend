@@ -1,0 +1,13 @@
+en:
+  classes:
+    ecm/news/backend/engine: 'News'
+  ecm:
+    news:
+      backend:
+        items:
+          table:
+            publish: Publish
+            unpublish: Unpublish
+  routes:
+    mount:
+      ecm_news_backend: '/backend/news'
