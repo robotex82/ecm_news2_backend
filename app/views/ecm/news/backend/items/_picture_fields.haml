@@ -1,4 +1,4 @@
-.well
+.well.nested-fields
   = f.input :image
   .image_preview.bottom-margin-1
     = image_tag(f.object.image.url(:default_thumb)) if f.object.image.present?

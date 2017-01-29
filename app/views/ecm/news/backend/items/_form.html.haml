@@ -12,7 +12,7 @@
   = form.input :published, as: :boolean
 
 %h4= resource_class.human_attribute_name(:pictures)
-#shipment_service_costs
+#pictures
   = form.simple_fields_for(:pictures) do |picture|
     = render 'picture_fields', f: picture
   .well.well-xs.links
