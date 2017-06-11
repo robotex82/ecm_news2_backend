@@ -1,17 +1,9 @@
 class Ecm::News::Backend::ItemsController < Itsf::Backend::Resource::BaseController
+  include Controller::FriendlyIdConcern
+  include Controller::ActsAsPublishedConcern
+
   def self.resource_class
     Ecm::News::Item
-  end
-
-  def toggle_published
-    @resource = resource_class.find(params[:id])
-    @resource.toggle_published!
-    action = @resource.published? ? :published : :unpublished
-    respond_with(
-      @resource,
-      location: collection_path,
-      notice: I18n.t("flash.actions.#{action_name}.#{action}.notice", inflections)
-    )
   end
 
   private
@@ -20,9 +12,5 @@ class Ecm::News::Backend::ItemsController < Itsf::Backend::Resource::BaseControl
     params
       .require(:item)
       .permit(:title, :locale, :body, :link_to_more, :published, pictures_attributes: [ :image, :_destroy, :id ])
-  end
-
-  def load_resource
-    load_scope.friendly.find(params[:id])
   end
 end
