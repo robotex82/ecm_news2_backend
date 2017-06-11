@@ -18,7 +18,7 @@ class Ecm::News::Backend::ItemsController < Itsf::Backend::Resource::BaseControl
 
   def permitted_params
     params
-      .require(:ecm_news_item)
+      .require(:item)
       .permit(:title, :locale, :body, :link_to_more, :published, pictures_attributes: [ :image, :_destroy, :id ])
   end
 

@@ -9,5 +9,4 @@ de:
             publish: Veröffentlichen
             unpublish: Zurückziehen
   routes:
-    mount:
-      ecm_news_backend: '/backend/news'
+    ecm-news-backend-engine: 'news'

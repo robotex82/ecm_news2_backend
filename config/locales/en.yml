@@ -9,5 +9,4 @@ en:
             publish: Publish
             unpublish: Unpublish
   routes:
-    mount:
-      ecm_news_backend: '/backend/news'
+    ecm-news-backend-engine: 'news'

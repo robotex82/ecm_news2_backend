@@ -1,5 +1,5 @@
 # This migration comes from ecm_news_engine (originally 1)
-class CreateEcmNewsItems < ActiveRecord::Migration
+class CreateEcmNewsItems < ActiveRecord::Migration[4.2]
   def change
     create_table :ecm_news_items do |t|
       t.string :title
