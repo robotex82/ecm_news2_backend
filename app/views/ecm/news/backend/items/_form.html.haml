@@ -3,7 +3,7 @@
   = form.locale_input
 
 .well  
-  = form.input :body, input_html: { 'data-add-editor': false, 'data-editor-syntax': :textile }
+  = form.input :body, input_html: { 'data-add-editor': Itsf::Backend.features?(:'ace-rails-ap'), 'data-editor-syntax': :textile }
 
 .well
   = form.input :link_to_more, as: :boolean
