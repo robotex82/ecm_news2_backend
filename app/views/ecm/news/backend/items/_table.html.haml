@@ -1,6 +1,6 @@
 = table.column(:preview_picture) do |item|
   - if item.preview_picture.present?
-    %img.img-responsive.bottom-margin-2{ src: item.preview_picture.image.url, alt: item.preview_picture.description, title: item.preview_picture.description }
+    %img.img-responsive.bottom-margin-2{ src: item.preview_picture.image.url(:default_thumb), alt: item.preview_picture.description, title: item.preview_picture.description }
 = table.column :locale, sortable: true
 = table.column :title, sortable: true, class: 'truncate-chars truncate-chars-30'
 = table.column :body, sortable: true, class: 'truncate-chars truncate-chars-30'
